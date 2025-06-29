@@ -44,7 +44,7 @@ export function ProductCard({ product }: ProductCardProps) {
         <p className="text-xl font-bold text-accent">${product.price.toFixed(2)} MXN</p>
         <Button asChild>
           <Link href={`/products/${product.slug}`}>
-            View <ArrowRight className="ml-2 h-4 w-4" />
+            Detalles <ArrowRight className="ml-2 h-4 w-4" />
           </Link>
         </Button>
       </CardFooter>

@@ -64,15 +64,15 @@ export default function AiAssistantPage() {
       <div className="max-w-2xl mx-auto">
         <div className="text-center mb-12">
           <Bot className="h-16 w-16 mx-auto text-primary mb-4" />
-          <h1 className="text-5xl md:text-6xl font-headline">AI Fertilizer Advisor</h1>
+          <h1 className="text-5xl md:text-6xl font-headline">Asistente Virtual</h1>
           <p className="text-lg mt-4">
-            Get personalized worm compost recommendations for your crops.
+            Obten recomendaciones personalizadas para tus cultivos por parte de una IA especializada en la materia.
           </p>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle className="font-headline text-2xl">Tell us about your needs</CardTitle>
+            <CardTitle className="font-headline text-2xl">Consulta con un experto</CardTitle>
           </CardHeader>
           <CardContent>
             <Form {...form}>
@@ -82,9 +82,9 @@ export default function AiAssistantPage() {
                   name="cropType"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Crop Type</FormLabel>
+                      <FormLabel>Tipo de cultivo</FormLabel>
                       <FormControl>
-                        <Input placeholder="e.g., Tomatoes, Corn, Roses" {...field} />
+                        <Input placeholder="ejem., Jitomates, Maiz, Rosales" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -95,10 +95,10 @@ export default function AiAssistantPage() {
                   name="soilConditions"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Soil Conditions</FormLabel>
+                      <FormLabel>Describe tu problema o necesidad</FormLabel>
                       <FormControl>
                         <Textarea
-                          placeholder="e.g., Sandy, pH 6.5, low in nitrogen"
+                          placeholder="ejem., Arenoso, pH 6.5, deficiencia de Nitrogeno. (Opcional)"
                           className="resize-none"
                           {...field}
                         />
@@ -111,10 +111,10 @@ export default function AiAssistantPage() {
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                      Getting Advice...
+                      Consultando al experto...
                     </>
                   ) : (
-                    'Get Advice'
+                    'Consultar'
                   )}
                 </Button>
               </form>
