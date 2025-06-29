@@ -9,10 +9,10 @@ import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 
 const navLinks = [
-  { href: '/', label: 'Home' },
-  { href: '/products', label: 'Products' },
-  { href: '/ai-assistant', label: 'AI Assistant' },
-  { href: '/contact', label: 'Contact' },
+  { href: '/', label: 'Inicio' },
+  { href: '/products', label: 'Productos' },
+  { href: '/ai-assistant', label: 'Assistente virtual' },
+  { href: '/contact', label: 'Contacto' },
 ];
 
 export function Header() {
@@ -25,7 +25,7 @@ export function Header() {
           <Link href="/" className="mr-6 flex items-center space-x-2">
             <LeafIcon className="h-6 w-6 text-primary" />
             <span className="hidden font-bold sm:inline-block font-headline text-lg">
-              EcoTierra
+                Las Lombrices de Joe 
             </span>
           </Link>
           <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -51,13 +51,13 @@ export function Header() {
               <SheetTrigger asChild>
                 <Button variant="ghost" size="icon">
                   <Menu className="h-5 w-5" />
-                  <span className="sr-only">Toggle Menu</span>
+                  <span className="sr-only">Abrir Menu</span>
                 </Button>
               </SheetTrigger>
               <SheetContent side="left" className="pr-0">
                 <Link href="/" className="mr-6 flex items-center space-x-2">
                   <LeafIcon className="h-6 w-6 text-primary" />
-                  <span className="font-bold font-headline text-lg">EcoTierra</span>
+                  <span className="font-bold font-headline text-lg">Las Lombrices de Joe</span>
                 </Link>
                 <div className="my-4 h-px w-full bg-border" />
                 <div className="flex flex-col space-y-4">
@@ -81,7 +81,7 @@ export function Header() {
              <Link href="/" className="ml-4 flex items-center space-x-2 md:hidden">
                 <LeafIcon className="h-6 w-6 text-primary" />
                 <span className="font-bold font-headline text-lg">
-                  EcoTierra
+                    Las Lombrices de Joe 
                 </span>
               </Link>
           </div>
@@ -89,12 +89,12 @@ export function Header() {
             <Button variant="ghost" size="icon" asChild>
               <Link href="/profile">
                 <User className="h-5 w-5" />
-                <span className="sr-only">Profile</span>
+                <span className="sr-only">Perfil</span>
               </Link>
             </Button>
             <Button variant="ghost" size="icon">
               <ShoppingCart className="h-5 w-5" />
-              <span className="sr-only">Cart</span>
+              <span className="sr-only">Carrito</span>
             </Button>
           </nav>
         </div>

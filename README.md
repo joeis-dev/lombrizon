@@ -1,5 +1,3 @@
-# Firebase Studio
+# Lombrizon 
 
-This is a NextJS starter in Firebase Studio.
-
-To get started, take a look at src/app/page.tsx.
+A web store to buy worms and derivates products.

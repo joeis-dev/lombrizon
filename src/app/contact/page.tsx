@@ -43,9 +43,9 @@ export default function ContactPage() {
   return (
     <div className="container mx-auto px-4 py-12">
       <div className="text-center mb-12">
-        <h1 className="text-5xl md:text-6xl font-headline">Get In Touch</h1>
+        <h1 className="text-5xl md:text-6xl font-headline">Contactanos</h1>
         <p className="text-lg mt-4 max-w-2xl mx-auto">
-          We'd love to hear from you! Whether you have a question about our products or want to become a distributor, our team is ready to answer all your questions.
+            Ya sea que necesites una cotizacion especial, requieres insumos de forma frecuente, tienes alguna queja o sugerencia nosotros estaremos felices de atender tu peticion! 
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export default function ContactPage() {
         <div>
           <Card>
             <CardHeader>
-              <CardTitle className="font-headline text-2xl">Send us a message</CardTitle>
+              <CardTitle className="font-headline text-2xl">Mandanos un mensaje</CardTitle>
             </CardHeader>
             <CardContent>
               <Form {...form}>
@@ -63,7 +63,7 @@ export default function ContactPage() {
                     name="name"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Name</FormLabel>
+                        <FormLabel>Nombre</FormLabel>
                         <FormControl>
                           <Input placeholder="John Doe" {...field} />
                         </FormControl>
@@ -76,7 +76,7 @@ export default function ContactPage() {
                     name="email"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Your Email</FormLabel>
+                        <FormLabel>Correo electronico</FormLabel>
                         <FormControl>
                           <Input placeholder="john.doe@example.com" {...field} />
                         </FormControl>
@@ -89,42 +89,42 @@ export default function ContactPage() {
                     name="message"
                     render={({ field }) => (
                       <FormItem>
-                        <FormLabel>Message</FormLabel>
+                        <FormLabel>Mensaje</FormLabel>
                         <FormControl>
-                          <Textarea placeholder="Tell us how we can help..." className="resize-none" {...field} />
+                          <Textarea placeholder="Dinos como podemos ayudarte ..." className="resize-none" {...field} />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
                     )}
                   />
-                  <Button type="submit">Send Message</Button>
+                  <Button type="submit">Enviar</Button>
                 </form>
               </Form>
             </CardContent>
           </Card>
         </div>
         <div className="space-y-8">
-          <h2 className="text-3xl font-headline">Contact Information</h2>
+          <h2 className="text-3xl font-headline">Informacion de Contacto</h2>
           <div className="space-y-4 font-body text-lg">
             <div className="flex items-start space-x-4">
               <MapPin className="h-6 w-6 text-primary mt-1" />
               <div>
-                <h3 className="font-semibold">Our Office</h3>
-                <p>123 Green Earth Way, Sustainability City, 12345</p>
+                <h3 className="font-semibold">Instalaciones</h3>
+                <p>Santa Teresa #4, San Jose del Rio, Zapotlanejo, JAL. CP: 45430</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Mail className="h-6 w-6 text-primary mt-1" />
               <div>
-                <h3 className="font-semibold">Email Us</h3>
-                <p>contact@ecotierra.com</p>
+                <h3 className="font-semibold">Escribenos un correo</h3>
+                <p>contacto@lombricesdejoe.com</p>
               </div>
             </div>
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-primary mt-1" />
               <div>
-                <h3 className="font-semibold">Call Us</h3>
-                <p>+52 (55) 1234 5678</p>
+                <h3 className="font-semibold">Llamanos</h3>
+                <p>+52 (33) 2889 0745</p>
               </div>
             </div>
           </div>
